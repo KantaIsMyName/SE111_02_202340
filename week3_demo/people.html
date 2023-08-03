@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Michael">
+    <meta name="description" content="week3demo">
+
+    <title> W3 | Multi-Page Sites </title>
+
+    <!--IN DOCUMENT STYLING: can style all elements in page-->
+    
+    <style>
+
+            /*we are now writing in CSS*/
+
+            /*SELECTION in CSS or Javascript:
+                selecting an element(s) within the page to do something with them (Styling, actions, applying buttons or functions)
+
+                SELECTION can occur through three main ways: 
+
+                    *TAG NAME - all tags of this type take the style 
+
+                    *ID VALUE only the element with that id takes the style 
+
+                    *CLASS VALUE - 
+
+            */
+
+            /*ANATOMY OF CSS CODE BLOCKS: 
+
+                selector {
+                    property: value;
+                }
+            */
+
+        div {/*applies to all dics in the page */
+                border:1px solid #eee8aa;
+                padding: 10px;
+                margin: 5px;
+        
+        }
+
+        #wrapper {
+            border:1px solid #b19cd9
+        } 
+
+    </style>
+
+</head>
+<body style="background-color: #888c8d;">
+    <div id="wrapper">
+
+        <div id="header">
+
+            <h1 id="title" class="fancy"> The Last Of Us</h1>
+
+        </div> <!--header end-->
+        <div id="nav" class="border">
+            <a href="index.html">| HOME |</a>
+            <a href="about.html">| ABOUT |</a>
+            <a href="people.html">| PEOPLE |</a>
+            <a href="places.html">| PLACES |</a>
+
+            <br>
+
+            <!--external link: goes outside of the site's domain-->
+            <a href="https://www.hbo.com/the-last-of-us" target ="_blank"> | Official HBO Site |</a>
+
+            <br>
+
+        </div><!--nav end-->
+
+        <div id="content" class="body">
+
+                <h2> Content for <B>PEOPLE</B></h2>
+
+
+            <a href="https://www.hbo.com/the-last-of-us"> | Official HBO Site | </a>
+
+            <a href="#footer"> | BOTTOM OF PAGE | </a>
+
+        </div><!--content end-->
+        <div id="footer" class id="border">
+
+            <p>&copy;M Villanueva | SE111.02 | <span class="fancy">202340</span></p>
+            <br>
+            <a href="index.html#header"> | Top of the HOME Page |</a> 
+
+        </div><!--footer end-->
+
+    </div><!--wrapper end-->
+
+
+</body>
+</html>
