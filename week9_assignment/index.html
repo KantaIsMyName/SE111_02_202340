@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta author="Michael Villanueva">
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<title>Week 2 Files</title>
+<style type="text/css">
+	.border{border:1px solid rgb(204, 154, 18);
+	
+			margin-bottom:10px;
+            
+            min-height:20px;}
+</style>
+</head>
+<html>
+<body>
+
+	<script type="text/javascript">
+		//Use this Array of objects to complete the assignment.
+		var people =[
+			{first:"Shrek",
+			last:"The Ogre",
+			credit:`Onions have layers, cakes have layers, and parfaits have layers BUT nothing has layers like an ogre has layers. This big stinky green hero has more charm than his appearance would have you guess, and flaunts it (unknowingly) all the time. He's honestly kind of in king mode, bestowing swag and slay upon the realms.` },
+			
+			{first:"Hermoine Granger",
+			last:"But specifically from the third movie where she essentially threatens to kill Draco Malfoy on the schools campus",
+			credit: `Hermoine: *jamming her wand up against Malfoy's adams apple which is weird cause its basically a lethal weapon and we're on a school set* "I swear to god Draco, make one more aggressive questionably romantic gesture towards Harry and we're gonna start thinking its not an act." 
+
+            Draco: "An act?" 
+            
+            Hermoine: "This Mother-` },
+			
+			{first:"Rubber",
+			last:"Tire",
+			credit:`From hit underground movie "Rubber" this sentient mass murdering tire's killing spree starts abruptly and ends with a bang. Guess you could say this tire.. was on a roll. Badum tss`  },
+			
+			{first:"Robin",
+			last:"Williams",
+			credit:`Descending from the divine heavens as the newly appointed god of Acting, Comedy, and Impressions.. Robin Williams stands as a monument among men. And in the context of this list, a monument amongst characters` },
+			
+			{first:"Spong-e Bob-u",
+			last:"From the hit youtube series Spongebob but Anime",
+			credit:`In a world where Japan took over the united states we'd have gotten anime spongebob. A version packed with moral lessons, character trope implications, and epic action sequences. But it'd also have horribly paid animators. So you know.. pros and cons.`},
+			
+			{first:"Buzz",
+			last:"Lightyear",
+			credit:` From hit Disney movie "Toy Story", and its sequels, this space-faring nomad solves punches first and asks questions while punching. Also was used for one of the most insane meme edits of the 20th century and shows how broken our new sense of humor is becoming. Don't believe me? Go on youtube and type in 'Buzz Lightyear we're not aiming for the truck meme edit'. Go on.. I'll give you a minute. Oh back already? YEAH MESSED UP RIGHT?` },
+			
+			{first:"Marion",
+			last:"Moseby",
+			credit:`The eldritch ruler of the Boston Tipton Hotel and consumate ruler of the 4th layer of hell. Marion Moseby is secretly a cambion that takes the souls of unsuspecting and needy hotel goers in the heart of Boston. By doing so he empowers his master Mr. Tipton whom bestows upon him otherworldly guile and charm.` }
+		]
+		
+		console.log(people[0])
+				console.log(people[0].first)
+
+				var body = document.querySelector (`body`)
+				console.log(body)
+				console.dir(body)
+
+				//body.innerHTML += <div> <p> ${people[0].first} is first </div> </p>
+
+				for(let i = 0; i < people.length; i++)
+				{
+					var tempDiv = document.createElement(`div`)
+					
+					tempDiv.setAttribute(`id`, `${i}`)
+
+					tempDiv.setAttribute(`class`, `border`)
+
+					for(key in people[i])
+					{                
+									
+						
+						var p = document.createElement(`p`)
+
+						var text = document.createTextNode(people[i][key])
+
+
+
+						p.appendChild(text) 
+						tempDiv.appendChild(p)
+
+
+					}
+
+					body.appendChild(tempDiv)
+				}
+
+	</script>
+</body>
+</html>
